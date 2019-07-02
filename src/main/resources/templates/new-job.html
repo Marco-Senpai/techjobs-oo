@@ -35,11 +35,11 @@
             </select>
         </div>
         <div class="form-group">
-            <label th:for="coreCompentencyId">Skill</label>
-            <select th:field="*{coreCompentencyId}">
-                <option th:each="coreCompentency : *{coreCompentencies}"
-                        th:value="${coreCompentency.id}"
-                        th:text="${coreCompentency.value}"></option>
+            <label th:for="coreCompetencyId">Skill</label>
+            <select th:field="*{coreCompetencyId}">
+                <option th:each="coreCompetency : *{coreCompetencies}"
+                        th:value="${coreCompetency.id}"
+                        th:text="${coreCompetency.value}"></option>
             </select>
         </div>
         <div class="form-group">
@@ -50,7 +50,7 @@
                         th:text="${positionType.value}"></option>
             </select>
         </div>
-        
+
         <input type="submit" value="Add Job" />
     </form>
 
